@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 @Service
 @AllArgsConstructor
 public class KafkaService {
-    public boolean consume(String message) {
+    public boolean consumeLive(String message) {
         log.info("Entering kafkaService.consume");
         try {
-            System.out.println(message);
+            log.info(message);
             return true;
         }
         catch(Exception e) {
